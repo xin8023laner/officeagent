@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="160dp"
+    android:background="@drawable/dialog_forgetpwd_shape"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="呼叫客户"
+        android:textColor="@color/color_00c987"
+        android:textSize="@dimen/size_30" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/hui_99" />
+
+    <TextView
+        android:id="@+id/tv_dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="15dip"
+        android:text="呼叫18500608270"
+        android:textColor="@color/color_25"
+        android:textSize="@dimen/size_32" />
+
+<TextView
+    android:id="@+id/tv_dialog_sendexpress"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:layout_gravity="left"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="15dp"
+    android:text="顺丰快递        345485454474"
+    android:textColor="@color/color_868585"
+    android:textSize="@dimen/size_26"
+    android:visibility="gone" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/hui_99" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip" >
+
+        <Button
+            android:id="@+id/btn_dialog_save"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="保存"
+             android:background="@color/transparent"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/size_26" />
+         <View
+        android:id="@+id/view3"
+        android:layout_width="0.5dip"
+        android:layout_height="match_parent"
+        android:background="@color/hui_99" />
+        <Button
+            android:id="@+id/btn_dialog_ok"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/transparent"
+            android:text="保存并拨打"
+            android:textColor="@color/color_ff5a00"
+            android:textSize="@dimen/size_26" />
+    </LinearLayout>
+
+</LinearLayout>

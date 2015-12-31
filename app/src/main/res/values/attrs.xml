@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Topbar Attrs -->
+    <declare-styleable name="Topbar">
+        <attr name="topbarBackBg" format="reference"/>
+        <attr name="topbarBackText" format="string"></attr>
+        <attr name="topbarBackTextColor" format="color"></attr>
+        <attr name="topbarTitleText" format="string"></attr>
+        <attr name="topbarTitleBelowBg" format="reference"></attr>
+        <attr name="topbarTitleTextColor" format="color"></attr>
+        <attr name="topbarTitleTextSize" format="dimension"></attr>
+        <attr name="topbarControlOneBg" format="reference"></attr>
+        <attr name="topbarControlOneText" format="string"></attr>
+        <attr name="topbarControlTwoBg" format="reference"></attr>
+        <attr name="topbarControlTwoText" format="string"></attr>
+        <attr name="topbarControlDotBg" format="reference"></attr>
+        <attr name="topbarControlOneTextColor" format="color"></attr>
+        <attr name="topbarControlTwoTextColor" format="color"></attr>
+        <attr name="topbarBackMode">
+            <enum name="other" value="0"></enum>
+            <enum name="normal" value="1"></enum>
+            <enum name="finish" value="2"></enum>
+        </attr>
+        <attr name="topbarTitleMode">
+            <enum name="click" value="0"></enum>
+            <enum name="normal" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <!-- Zxing Attrs -->
+    <declare-styleable name="ViewFinderView">
+        <attr name="longAround" format="dimension"></attr>
+    </declare-styleable>
+
+    <!-- Autoload Attrs -->
+    <declare-styleable name="ZSwipeItem">
+        <attr name="drag_edge" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="horizontalSwipeOffset" format="dimension" />
+        <attr name="verticalSwipeOffset" format="dimension" />
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+    </declare-styleable>
+    
+    <!-- 圆形ImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    	<!-- softlist -->
+	<declare-styleable name="ClearEditTextStrong"> 
+        <attr name="clearTextSize" format="dimension"/> 
+        <attr name="clearHint" format="string"/> 
+    </declare-styleable>
+    
+      <!-- MenuDraw所需属性 -->
+    <attr name="menuDrawerStyle" format="reference" />
+    <declare-styleable name="MenuDrawer">
+        <attr name="mdContentBackground" format="reference" />
+        <attr name="mdMenuBackground" format="reference" />
+        <attr name="mdMenuSize" format="dimension" />
+        <attr name="mdActiveIndicator" format="reference" />
+        <attr name="mdDropShadowEnabled" format="boolean" />
+        <attr name="mdDropShadowSize" format="dimension" />
+        <attr name="mdDropShadowColor" format="color" />
+        <attr name="mdDropShadow" format="reference" />
+        <attr name="mdTouchBezelSize" format="dimension" />
+    </declare-styleable>
+</resources>

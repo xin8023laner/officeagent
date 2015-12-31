@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    style="@style/MM"
+    android:background="@color/hui_f0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_personcenter"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_gerenzhongxin" >
+
+        <com.common.ui.Topbar
+            style="@style/MW.Topbar"
+            android:background="@color/transparent"
+            app:topbarBackMode="other"
+            app:topbarTitleText="个人中心" >
+        </com.common.ui.Topbar>
+
+        <RelativeLayout
+            android:id="@+id/rl_personinfo"
+            style="@style/MM"
+            android:layout_marginTop="45dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_personcenter_head"
+                style="@style/WW"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/head_gerenzhongxin" >
+
+                <ImageView
+                    android:id="@+id/iv_personcenter_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/head_moren" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_userName"
+                style="@style/WW"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/rl_personcenter_head"
+                android:text="李芳"
+                android:textColor="@color/bai_ff"
+                android:textSize="@dimen/size_32" />
+
+            <TextView
+                android:id="@+id/tv_phoneNum"
+                style="@style/WW"
+                android:layout_below="@id/tv_userName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/rl_personcenter_head"
+                android:text="13167832688"
+                android:textColor="@color/bai_ff"
+                android:textSize="@dimen/size_32" />
+
+            <TextView
+                android:id="@+id/tv_agentName"
+                style="@style/WW"
+                android:layout_below="@id/tv_phoneNum"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@id/rl_personcenter_head"
+                android:singleLine="true"
+                android:text="主语国际城指尖快递服务站"
+                android:textColor="@color/bai_ff"
+                android:textSize="@dimen/size_30" />
+
+            <LinearLayout
+                style="@style/MM"
+                android:layout_below="@id/rl_personcenter_head"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_today_yipai"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/hui_3800" >
+
+                    <TextView
+                        android:id="@+id/tv_today_yipaitext"
+                        style="@style/MW"
+                        android:layout_marginTop="11dp"
+                        android:gravity="center_horizontal"
+                        android:text="今日已派"
+                        android:textColor="@color/bai_ff"
+                        android:textSize="@dimen/size_32" />
+
+                    <TextView
+                        android:id="@+id/tv_home_paisong"
+                        style="@style/MW"
+                        android:layout_below="@id/tv_today_yipaitext"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/bai_ff"
+                        android:textSize="@dimen/size_60" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_today_yilan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@color/hui_3800" >
+
+                    <TextView
+                        android:id="@+id/tv_today_yilantext"
+                        style="@style/MW"
+                        android:layout_marginTop="11dp"
+                        android:gravity="center_horizontal"
+                        android:text="今日已揽"
+                        android:textColor="@color/bai_ff"
+                        android:textSize="@dimen/size_32" />
+
+                    <TextView
+                        android:id="@+id/tv_home_lanshou"
+                        style="@style/MW"
+                        android:layout_below="@id/tv_today_yilantext"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/bai_ff"
+                        android:textSize="@dimen/size_60" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_today_weituo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@color/hui_3800" >
+
+                    <TextView
+                        android:id="@+id/tv_today_weituotext"
+                        style="@style/MW"
+                        android:layout_marginTop="11dp"
+                        android:gravity="center_horizontal"
+                        android:text="今日未妥投"
+                        android:textColor="@color/bai_ff"
+                        android:textSize="@dimen/size_32" />
+
+                    <TextView
+                        android:id="@+id/tv_today_weituoCount"
+                        style="@style/MW"
+                        android:layout_below="@id/tv_today_weituotext"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/bai_ff"
+                        android:textSize="@dimen/size_60" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="11dp"
+        layout="@layout/include_line_horizontal_march_c7" />
+
+    <RelativeLayout
+        android:id="@+id/rl_detailcount"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/bai_ff"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_tongji"
+            style="@style/WM"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_tongji" />
+
+        <TextView
+            android:id="@+id/tv_detailcount"
+            style="@style/WM"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@id/iv_tongji"
+            android:gravity="center_vertical"
+            android:text="@string/detailcount"
+            android:textColor="@color/hei_25"
+            android:textSize="@dimen/size_28" />
+
+        <ImageView
+            style="@style/WM"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/btn_jiantou" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        layout="@layout/include_line_horizontal_march_c7" />
+
+    <RelativeLayout
+        android:id="@+id/rl_more"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/bai_ff"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_more"
+            style="@style/WM"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_gengduo" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            style="@style/WM"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@id/iv_more"
+            android:gravity="center_vertical"
+            android:text="@string/more"
+            android:textColor="@color/hei_25"
+            android:textSize="@dimen/size_28" />
+
+        <ImageView
+            style="@style/WM"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/btn_jiantou" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        layout="@layout/include_line_horizontal_march_c7" />
+
+</LinearLayout>

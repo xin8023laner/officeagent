@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SwipeBackLayout Ids -->
+    <item name="swipeback" type="id"></item>
+
+    <!-- LoadingDialog Ids-->
+    <item name="loading_msg" type="id"></item>
+
+    <!-- Topbar Ids -->
+    <item name="topbar" type="id"></item>
+    <item name="topbar_back" type="id"></item>
+    <item name="topbar_title" type="id"></item>
+    <item name="topbar_control_one" type="id"></item>
+    <item name="topbar_control_two" type="id"></item>
+
+    <!-- Zxing Ids -->
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    
+    <!-- WheelView Ids -->
+    <item name="year" type="id"></item>
+    <item name="month" type="id"></item>
+    <item name="day" type="id"></item>
+    
+      <!-- MenuDraw所需id -->
+    <item name="mdContent" type="id"/>
+    <item name="mdMenu" type="id"/>
+    <item name="md__content" type="id"/>
+    <item name="md__menu" type="id"/>
+    <item name="md__drawer" type="id"/>
+    <item name="mdActiveViewPosition" type="id"/>
+</resources>

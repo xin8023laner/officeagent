@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.common.ui.Topbar
+        style="@style/MW.Topbar"
+        app:topbarBackBg="@drawable/btn_fanhui_topbar"
+        app:topbarBackMode="finish"
+        app:topbarTitleText="滞留件处理" />
+  <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:padding="10dip" >
+    
+    <TextView
+        android:id="@+id/tv_zhiliu_carry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+       android:textColor="@color/color_25"
+                    android:textSize="@dimen/size_28"
+          />
+ </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_zhiliu_lianxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+         android:background="@color/color_ffffff"
+         android:padding="10dip"
+         >
+
+        <TextView
+            android:id="@+id/tv_zhiliu_lianxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式："
+             android:textSize="@dimen/size_28" />
+<TextView
+            android:id="@+id/tv_zhiliu_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_zhiliu_lianxi"
+            android:layout_marginTop="10dp"
+            android:text="15888888888"
+             android:textSize="@dimen/size_28" />
+        <Button
+            android:id="@+id/btn_zhiliu_call"
+           android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_zhiliu_lianxi"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/btn_dadianhua"
+         />
+
+        <Button
+            android:id="@+id/btn_zhiliu_edit"
+           android:layout_height="45dp"
+            android:layout_width="45dp"
+              android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/btn_zhiliu_call"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bianji" />
+    </RelativeLayout>
+ <TextView
+                    android:id="@+id/tv_zhiliu_msg"
+                    style="@style/WW"
+                    android:layout_below="@id/rl_zhiliu_lianxi"
+                    android:layout_marginTop="8dip"
+                    android:singleLine="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="短信/APP通知："
+                    android:textColor="@color/color_ff6f46"
+                    android:textSize="@dimen/size_28" />
+ 
+ 
+   <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:background="@color/color_ffffff"
+                android:padding="5dip" >
+<RadioGroup
+    android:id="@+id/radgr_zhiliu"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content" >
+
+    <RadioButton
+        android:id="@+id/rad_zhiliu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+                            android:button="@drawable/rb_black_selector"
+        android:checked="true"
+         android:paddingLeft="5dip"
+         android:textSize="@dimen/size_32"
+        android:text="继续滞留" />
+
+    <RadioButton
+        android:id="@+id/rad_shibai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+                            android:button="@drawable/rb_black_selector"
+        android:layout_marginLeft="15dp"
+         android:paddingLeft="5dip"
+         android:textSize="@dimen/size_32"
+        android:text="联系失败" />
+      <RadioButton
+        android:id="@+id/rad_yichang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+                            android:button="@drawable/rb_black_selector"
+        android:layout_marginLeft="15dp"
+         android:paddingLeft="5dip"
+         android:textSize="@dimen/size_32"
+        android:text="置为异常" />
+
+</RadioGroup>
+</RelativeLayout>
+ <RelativeLayout
+     android:id="@+id/rl_zhiliu_yuanyinyin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:background="@color/color_ffffff"
+                android:padding="15dip" >
+<RelativeLayout
+                        android:id="@+id/rl_zhiliu_yuanyin"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:background="@drawable/input_search"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                        
+                        >
+
+                        
+
+                        <ImageView
+                            android:id="@+id/iv_expressdetail_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/btn_jiantou_xia" />
+
+                        <TextView
+                            android:id="@+id/tv_zhiliu_yuanyin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_centerVertical="true"
+                            android:text="请选择原因"
+                            android:textColor="@color/color_25"
+                    android:textSize="@dimen/size_28" />
+
+                    </RelativeLayout>
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn_zhiliu_submit"
+        android:layout_width="match_parent"
+        android:layout_height="41dip"
+      android:layout_alignParentBottom="true"
+        android:layout_margin="20dip"
+        android:background="@color/color_ff6f46"
+        android:text="提交处理"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/size_32" />
+</RelativeLayout>
+
+</LinearLayout>

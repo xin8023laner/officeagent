@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_forgetpwd_shape"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_dialog_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:scaleType="center"
+        android:src="@drawable/icon_dachenggong" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/transparent" />
+
+    <TextView
+        android:id="@+id/tv_dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dip"
+        android:gravity="center_horizontal"
+        android:text="入库成功！"
+        android:textColor="@color/color_c4"
+        android:textSize="@dimen/size_28" />
+
+    <LinearLayout
+        style="@style/MW"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_dialog_ok"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_search"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/bai_ff"
+            android:textSize="@dimen/size_26" />
+
+        <Button
+            android:id="@+id/btn_dialog_paisong"
+            android:layout_width="match_parent"
+            android:layout_height="41dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/color_00c887"
+            android:text="去我的派送列表"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/size_26" 
+            />
+    </LinearLayout>
+
+</LinearLayout>

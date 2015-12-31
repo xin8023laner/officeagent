@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bai_ff" >
+
+    <RelativeLayout
+        android:id="@+id/rl_agentcontent"
+        style="@style/MW"
+        android:paddingLeft="17dp" >
+
+        <TextView
+            android:id="@+id/tv_agentname"
+            style="@style/MW"
+            android:layout_marginTop="14dp"
+            android:singleLine="true"
+            android:text="中国电子大厦代办点"
+            android:textColor="@color/hei_25"
+            android:textSize="@dimen/size_30" />
+
+        <TextView
+            android:id="@+id/tv_agentaddress"
+            style="@style/MW"
+            android:layout_below="@id/tv_agentname"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="13dp"
+            android:lineSpacingExtra="6dp"
+            android:lines="2"
+            android:text="丹棱街16号海星大厦B座1层西塔网络贯通云网1002号"
+            android:textColor="@color/hui_9e"
+            android:textSize="@dimen/size_28" />
+
+        <ImageView
+            android:id="@+id/iv_toAgentdetails"
+            style="@style/WW"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/btn_jiantou" />
+    </RelativeLayout>
+
+</RelativeLayout>

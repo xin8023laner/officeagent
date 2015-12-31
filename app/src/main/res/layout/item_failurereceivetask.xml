@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" 
+        android:layout_marginBottom="5dp"
+        >
+
+        <LinearLayout
+            style="@style/MW"
+            android:orientation="horizontal" 
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_item_failureReceiveTask_name"
+                style="@style/WW"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:text="汇通快递"
+                android:textColor="@color/color_25"
+                android:textSize="@dimen/size_28" />
+
+            <TextView
+                android:id="@+id/tv_item_failureReceiveTask_code"
+                style="@style/WW"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="313454664865"
+                android:textColor="@color/color_25"
+                android:textSize="@dimen/size_28" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_failureReceiveTask_failedReason"
+            style="@style/MW"
+            android:text="失败原因：该快件已入库"
+            android:textColor="@color/color_00c987"
+            android:textSize="@dimen/size_24" 
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_failureReceiveTask_refresh"
+        style="@style/WW"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/btn_chongshi"
+        android:gravity="center"
+        android:text="重试"
+        android:padding="10dp"
+        android:textColor="@color/hong_00" 
+        android:visibility="gone"/>
+
+</LinearLayout>

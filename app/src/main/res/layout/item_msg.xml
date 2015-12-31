@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dip"
+    android:background="@color/bai_ff"
+    android:paddingBottom="18dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="18dip" >
+
+    <FrameLayout style="@style/WW" >
+
+        <ImageView
+            android:id="@+id/iv_msg_icon"
+            style="@style/WW"
+            android:scaleType="center"
+            android:src="@drawable/icon_xiaoxi" />
+        <ImageView
+            android:id="@+id/iv_msg_new"
+            style="@style/WW"
+            android:layout_gravity="right|top"
+            android:scaleType="center"
+            android:src="@drawable/icon_new" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_msg_msg"
+        style="@style/WW"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="你还又若干的快件没有认领哦，赶紧去看看"
+        android:textColor="@color/hei"
+        android:textSize="@dimen/size_30" />
+
+    <TextView
+        android:id="@+id/tv_msg_time"
+        style="@style/WW"
+        android:singleLine="true"
+        android:text="今天2:00"
+        android:textColor="@color/color_7e"
+        android:textSize="@dimen/size_28" />
+
+</LinearLayout>

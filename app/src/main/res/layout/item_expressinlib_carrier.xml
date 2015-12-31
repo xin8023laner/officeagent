@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bai_ff"
+    >
+
+    <com.common.ui.CircleImageView
+        android:id="@+id/civ_expressinlib_carrier_icon"
+        android:layout_width="54dip"
+        android:layout_height="54dip"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_zhengque"
+        app:border_color="@color/bai_ff"
+        app:border_width="2dp"
+         />
+
+     <ImageView
+        android:id="@+id/iv_item_selector"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignRight="@+id/civ_expressinlib_carrier_icon"
+        android:layout_alignBottom="@+id/civ_expressinlib_carrier_icon"
+        android:visibility="gone"
+        android:src="@drawable/icon_zhengque" />
+
+    <TextView
+        android:id="@+id/tv_expressinlib_carrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/civ_expressinlib_carrier_icon"
+      android:singleLine="true"
+        android:text="TextView" />
+
+</RelativeLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai_ff"
+    android:orientation="vertical" >
+
+    <com.common.ui.Topbar
+        android:id="@+id/topbar_detailcount"
+        style="@style/MW.Topbar"
+        app:topbarBackBg="@drawable/btn_fanhui_topbar"
+        app:topbarBackMode="finish"
+        app:topbarTitleText="详细统计" >
+    </com.common.ui.Topbar>
+
+    <LinearLayout
+        style="@style/MW"
+        android:orientation="horizontal"
+        android:paddingBottom="11dp"
+        android:paddingTop="13dp" >
+
+        <TextView
+            android:id="@+id/tv_top_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="6-25"
+            android:textColor="@color/hei_45"
+            android:textSize="@dimen/size_34" />
+
+        <TextView
+            android:id="@+id/tv_top_week"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="星期四"
+            android:textColor="@color/hei_45"
+            android:textSize="@dimen/size_34" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        layout="@layout/include_line_horizontal_march_c7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <ImageView
+            android:id="@+id/iv_detailcount_zuo"
+            style="@style/WM"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/btn_zuo_tongji" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_home_paisong"
+                style="@style/WW"
+                android:background="@drawable/bg_paisong_tongji"
+                android:gravity="center"
+                android:textColor="@color/color_ffffff"
+                android:text="0"
+                android:textSize="@dimen/size_54" />
+
+            <TextView
+                style="@style/WW"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="5dip"
+                android:text="派送数量"
+                android:textColor="@color/color_25"
+                android:textSize="@dimen/size_32" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.2dip"
+            android:layout_height="82dip"
+            android:layout_marginTop="10dip"
+            android:background="@color/color_aa" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_home_lanshou"
+                style="@style/WW"
+                android:background="@drawable/bg_lanshou_tongji"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/size_54" />
+
+            <TextView
+                style="@style/WW"
+                android:layout_gravity="center"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="5dip"
+                android:text="揽收数量"
+                android:textColor="@color/color_25"
+                android:textSize="@dimen/size_32" />
+        </LinearLayout>
+
+        <ImageView
+             android:id="@+id/iv_detailcount_you"
+            style="@style/WM"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/btn_you_tongji" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dip"
+        android:background="@color/hui_f0" />
+
+    <LinearLayout
+        style="@style/MW"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edt_choicedate"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
+            android:editable="false"
+            android:hint="@string/choicedate"
+            android:paddingLeft="13dp"
+            android:textColor="@color/hei_25"
+            android:textSize="@dimen/size_28" />
+
+        <ImageView
+            android:id="@+id/iv_choicedate"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/btn_riqixuanze" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/MW"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_detailcount_title"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/color_00c887"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="日期"
+                android:textColor="@color/bai_ff"
+                android:textSize="@dimen/size_28" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="派送数"
+                android:textColor="@color/bai_ff"
+                android:textSize="@dimen/size_28" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="揽收数"
+                android:textColor="@color/bai_ff"
+                android:textSize="@dimen/size_28" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_detailcount_total"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+             >
+
+            <include
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                layout="@layout/include_short_vertical_c7" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="总计"
+                android:textColor="@color/hei_45"
+                android:textSize="@dimen/size_28" />
+
+            <include
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                layout="@layout/include_short_vertical_c7" />
+
+            <TextView
+                android:id="@+id/tv_detailcount_sendtotal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="23411"
+                android:textColor="@color/hei_45"
+                android:textSize="@dimen/size_28" />
+
+            <include
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                layout="@layout/include_short_vertical_c7" />
+
+            <TextView
+                android:id="@+id/tv_detailcount_receivetotal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="211"
+                android:textColor="@color/hei_45"
+                android:textSize="@dimen/size_28" />
+
+            <include
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                layout="@layout/include_short_vertical_c7" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            layout="@layout/include_line_horizontal_march_c7" />
+
+        <ListView
+            android:id="@+id/lv_detailcount_dayofmonth"
+            android:layout_marginBottom="20dip"
+            android:divider="@color/transparent"
+            style="@style/MW"
+            android:layout_gravity="center_horizontal" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

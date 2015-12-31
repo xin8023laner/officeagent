@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">楼宇代办员</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_choicedaibandian">请选择代办点</string>
+    <string name="shoujihao">手机号码</string>
+    <string name="mima_login">密码</string>
+    <string name="forgetpwd_login">忘记密码？</string>
+    <string name="_">提交</string>
+    <string name="tv_login">登录</string>
+    <string name="oldpwd">旧密码</string>
+    <string name="newpwd">新密码</string>
+    <string name="quedingupdate">确定修改</string>
+    <string name="querenmima">确认密码</string>
+    <string name="forgetpwd">忘记密码</string>
+    <string name="login_shoujihao">您登录的手机号码</string>
+    <string name="send_newpwd">发送新密码</string>
+    <string name="loginfail_tip">请检查用户名或密码，并保证工作地点无误!</string>
+    <string name="loginfail">登录失败</string>
+    <string name="search_myagent">查找我的工作站点</string>
+    <string name="btn_search">搜索</string>
+    <string name="nearagent">附近代办点</string>
+    <string name="searchagent">搜索结果</string>
+    <string name="checkupdate">检查版本更新</string>
+    <string name="isnewversion">已是最新版本</string>
+    <string name="notremember">登录密码记不住?</string>
+    <string name="updatepwd">修改密码</string>
+    <string name="howtouse">如何使用app?</string>
+    <string name="lookintroduce">看介绍</string>
+    <string name="suggestion">有想法和意见?</string>
+    <string name="cometotalk">来说说</string>
+    <string name="exitlogin">退出登录</string>
+    <string name="detailcount">详细统计</string>
+    <string name="more">更多</string>
+    <string name="choicedate">请选择日期</string>
+    <string name="select">查询</string>
+    <string name="select_diaochubill">请查询调出订单</string>
+    <string name="userself_tips">*可输入手机号、客户姓名、快递单号、或确认码调出订单</string>
+    <string name="btn_sureuserself">确认客户自提</string>
+    
+    <!-- 异常原因 -->
+    <string name="reason_refuse">客户拒收</string>
+    <string name="reason_wrong">订单分发错误</string>
+    <string name="reason_contact">无法联系到客户</string>
+
+</resources>

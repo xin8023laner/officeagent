@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.common.ui.Topbar
+        style="@style/MW.Topbar"
+        app:topbarBackBg="@drawable/btn_fanhui_topbar"
+        app:topbarBackMode="finish"
+        app:topbarTitleText="短信模板" />
+<LinearLayout 
+   style="@style/MW"
+   android:orientation="vertical"
+   android:layout_below="@id/topbar"
+    >
+    <LinearLayout
+        style="@style/MW"
+        android:background="@color/bai_ff"
+        android:orientation="vertical" 
+        >
+
+        <LinearLayout
+            style="@style/MW"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:button="@drawable/rb_black_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:text="自提短信"
+                android:textColor="@color/color_33"
+                android:textColorHint="@color/color_99"
+                android:textSize="@dimen/size_28" />
+
+            <TextView
+                style="@style/WW"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:text="还可输入60字"
+                android:textColor="@color/hui_99" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="10dp"
+            android:text="您的【快递公司】单号为【快递单号】取件编号【取件编号】的快件已到达【代办点地址】，请于13:00-18:00间取件，服务站电话：【服务站电话】。"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/size_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/MW"
+        android:background="@color/bai_ff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/MW"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:button="@drawable/rb_black_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:text="滞留短信"
+                android:textColor="@color/color_33"
+                android:textColorHint="@color/color_99"
+                android:textSize="@dimen/size_28" />
+
+            <TextView
+                style="@style/WW"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:text="还可输入60字"
+                android:textColor="@color/hui_99" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="10dp"
+            android:text="您的【快递公司】单号为【快递单号】取件编号【取件编号】的快件已到达【代办点地址】，请于13:00-18:00间取件，服务站电话：【服务站电话】。"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/size_24" />
+    </LinearLayout>
+</LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="30dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ff6f46"
+        android:text="选择模板"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/size_32" />
+
+</RelativeLayout>

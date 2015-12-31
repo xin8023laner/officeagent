@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hui_f0"
+    android:id="@+id/ll_login"
+    android:orientation="vertical" >
+
+    <com.common.ui.Topbar
+        style="@style/MW.Topbar"
+        app:topbarTitleText="登录" >
+    </com.common.ui.Topbar>
+
+    <LinearLayout
+        android:id="@+id/ll_login_topLayout"
+        style="@style/MW"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_login_logo"
+            style="@style/WW"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/head_moren" />
+
+        <RelativeLayout
+            android:id="@+id/rl_daibandian"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/bai_ff" >
+
+            <ImageView
+                android:id="@+id/icon_dibandian"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_daibandian" />
+
+            <include
+                android:id="@+id/divider_daibandian"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4.5dp"
+                android:layout_marginTop="4.5dp"
+                android:layout_toRightOf="@id/icon_dibandian"
+                layout="@layout/include_short_vertical" />
+
+            <TextView
+                android:id="@+id/tv_choicedaibandian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/divider_daibandian"
+                android:hint="@string/hint_choicedaibandian"
+                android:textColor="@color/hei_33"
+                android:textSize="@dimen/size_28" />
+
+            <ImageView
+                android:id="@+id/iv_choicedaibandian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/btn_jiantou" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_login_container"
+        style="@style/MM"
+        android:layout_marginTop=" 10dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_shoujihao"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/bai_ff" >
+
+            <ImageView
+                android:id="@+id/icon_shoujihao"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_shoujihao" />
+
+            <include
+                android:id="@+id/divider_shoujihao"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4.5dp"
+                android:layout_marginTop="4.5dp"
+                android:layout_toRightOf="@id/icon_shoujihao"
+                layout="@layout/include_short_vertical" />
+
+            <EditText
+                android:id="@+id/edt_shoujihao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="50dp"
+                android:layout_toRightOf="@id/divider_shoujihao"
+                android:background="@null"
+                android:hint="@string/shoujihao"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColor="@color/hei_33"
+                android:textSize="@dimen/size_28" />
+
+            <RelativeLayout
+                android:id="@+id/rl_clear_phone"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" >
+
+                <ImageView
+                    android:id="@+id/iv_phoneclear_login"
+                    style="@style/WW"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/icon_clear"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            layout="@layout/include_line_horizontal_march" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mima"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="46dp"
+            android:background="@color/bai_ff" >
+
+            <ImageView
+                android:id="@+id/icon_mima"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_mima" />
+
+            <include
+                android:id="@+id/divider_mima"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4.5dp"
+                android:layout_marginTop="4.5dp"
+                android:layout_toRightOf="@id/icon_mima"
+                layout="@layout/include_short_vertical" />
+
+            <EditText
+                android:id="@+id/edt_mima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/divider_mima"
+                android:background="@null"
+                android:hint="@string/mima_login"
+                android:inputType="textPassword"
+                android:textColor="@color/hei_33"
+                android:textSize="@dimen/size_28" />
+
+            <ImageView
+                android:id="@+id/iv_pwd_login"
+                style="@style/WW"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/icon_zhengque"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/MW"
+            android:layout_marginTop="120dp" >
+
+            <TextView
+                android:id="@+id/tv_resetpwd_login"
+                style="@style/WW.tishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="30dp "
+                android:layout_marginRight="25dp"
+                android:text="@string/forgetpwd_login" />
+
+            <Button
+                android:id="@+id/btn_submit_login"
+                style="@style/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/tv_resetpwd_login"
+                android:text="@string/tv_login" />
+        </RelativeLayout>
+    </FrameLayout>
+    
+</LinearLayout>

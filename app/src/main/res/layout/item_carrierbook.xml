@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_item_carrierbook"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" 
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <com.common.ui.CircleImageView
+            android:id="@+id/civ_expressinlib_carrier_icon"
+            android:layout_width="54dip"
+            android:layout_height="54dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/icon_zhengque"
+            app:border_color="@color/bai_ff"
+            app:border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/tv_item_carrierbook_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                
+                />
+            <TextView
+                android:id="@+id/tv_item_carrierbook_Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                
+                />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/btn_jiantou" />
+
+</LinearLayout>

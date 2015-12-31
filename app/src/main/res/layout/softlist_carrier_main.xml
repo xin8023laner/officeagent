@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+
+    <com.common.ui.Topbar
+        style="@style/MW.Topbar"
+        app:topbarBackBg="@drawable/btn_fanhui_topbar"
+        app:topbarBackMode="finish"
+        app:topbarTitleText="快递公司 ">
+    </com.common.ui.Topbar>
+
+    <LinearLayout
+        android:id="@+id/context"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        >
+
+        <com.catcry.softview.ClearEditText
+            android:id="@+id/filter_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bj_search"
+            android:drawableLeft="@drawable/softlist_search_bar_icon_normal"
+            android:hint="请输入公司名称快速从列表检索"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/country_lvcountry"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/softlist_show_head_toast_bg"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="30dp"
+                android:visibility="invisible" />
+
+            <com.catcry.softview.SideBar
+                android:id="@+id/sidrbar"
+                android:layout_width="30dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center" />
+        </FrameLayout>
+    </LinearLayout>
+
+  
+
+</LinearLayout>

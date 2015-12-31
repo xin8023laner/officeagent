@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_forgetpwd_shape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="选择年月"
+        android:textColor="@color/color_00c987"
+        android:textSize="@dimen/size_32" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/hui_f0" />
+    <LinearLayout
+        android:id="@+id/timePicker1"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="34dp"
+        android:background="@color/bai_ff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <cn.yuri.wheelview.WheelView
+            android:id="@+id/year"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <cn.yuri.wheelview.WheelView
+            android:id="@+id/month"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+       
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        layout="@layout/include_line_horizontal_march"
+        android:background="@color/hui_c7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_dialogcancel_changebirthday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_btn_cancel_selector"
+            android:text="取消"
+            android:textColor="@color/hui_99"
+            android:textSize="@dimen/size_32" />
+
+        <include
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            layout="@layout/include_short_vertical_c7" />
+
+        <Button
+            android:id="@+id/btn_dialogconfirm_changebirthday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_btn_confirm_selector"
+            android:text="确定"
+            android:textColor="@color/color_ff6f46"
+            android:textSize="@dimen/size_32" />
+    </LinearLayout>
+
+</LinearLayout>

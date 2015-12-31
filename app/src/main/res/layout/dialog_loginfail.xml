@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
+    android:layout_height="110dp"
+    android:background="@drawable/dialog_loginfail_shape"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/MW"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/loginfail"
+        android:textColor="@color/bai_ff"
+        android:textSize="@dimen/size_28" />
+
+    <TextView
+        style="@style/MW"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:lineSpacingExtra="17dp"
+        android:lines="2"
+        android:text="@string/loginfail_tip"
+        android:textColor="@color/bai_ff"
+        android:textSize="@dimen/size_26" />
+
+</LinearLayout>

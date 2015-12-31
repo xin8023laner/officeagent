@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai_ff"
+    android:orientation="vertical" >
+    <com.common.ui.Topbar
+        style="@style/MW.Topbar"
+        app:topbarBackBg="@drawable/btn_fanhui_topbar"
+        app:topbarBackMode="finish"
+        app:topbarTitleText="失败快件预览" />
+	<TextView
+	    style="@style/WW"
+	    android:text="失败快件："
+	    android:layout_margin="10dp"
+	    />
+	<ListView 
+	    android:id="@+id/lv_failReceiveTask"
+	    style="@style/MW"
+	    android:layout_margin="10dp"
+	    />
+</LinearLayout>

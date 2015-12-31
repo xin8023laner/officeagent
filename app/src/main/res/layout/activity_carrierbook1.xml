@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    style="@style/MM"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical" >
+
+    <com.common.ui.Topbar
+        style="@style/MW.Topbar"
+        app:topbarBackBg="@drawable/btn_fanhui_topbar"
+        app:topbarBackMode="finish"
+        app:topbarTitleText="快递公司" />
+
+   <ListView 
+       android:id="@+id/lv_activity_carrierbook"
+       style="@style/MW"
+       />
+    <include
+        android:id="@+id/nodata"
+        layout="@layout/include_nodata"
+        android:visibility="gone" />
+</LinearLayout>

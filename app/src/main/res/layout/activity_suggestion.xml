@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hui_f0"
+    android:orientation="vertical" >
+
+    <com.common.ui.Topbar
+        style="@style/MW.Topbar"
+        app:topbarBackBg="@drawable/btn_fanhui_topbar"
+        app:topbarBackMode="finish"
+        app:topbarTitleText="意见反馈" >
+    </com.common.ui.Topbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:layout_margin="15dip"
+        android:padding="5dip"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edt_suggestion_Content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请输入您对我们的建议（字数限50字）"
+            android:lines="7"
+            android:maxLength="50"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_suggestion_submit"
+        style="@style/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="提交" />
+
+</LinearLayout>

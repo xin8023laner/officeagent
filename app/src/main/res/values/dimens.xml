@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Topbar Common Height -->
+    <dimen name="topbar_height">45dp</dimen>
+
+    <!-- Text Common Size parse px to sp -->
+    <dimen name="size_60">40sp</dimen>
+    <dimen name="size_54">30sp</dimen>
+    <dimen name="size_42">24sp</dimen>
+    <dimen name="size_38">22sp</dimen>
+    <dimen name="size_36">20sp</dimen>
+    <dimen name="size_34">19sp</dimen>
+    <dimen name="size_32">18sp</dimen>
+    <dimen name="size_30">17sp</dimen>
+    <dimen name="size_28">16sp</dimen>
+    <dimen name="size_26">15sp</dimen>
+    <dimen name="size_24">14sp</dimen>
+    <dimen name="size_22">13sp</dimen>
+    <dimen name="size_20">12sp</dimen>
+
+</resources>

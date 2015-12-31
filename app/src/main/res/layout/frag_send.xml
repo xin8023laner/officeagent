@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout style="@style/MW" >
+
+        <com.common.ui.Topbar
+            style="@style/MW.Topbar"
+            app:topbarBackBg="@drawable/btn_caidan_topbar"
+            app:topbarBackMode="other"
+            app:topbarControlTwoText="搜索"
+            app:topbarControlTwoTextColor="@color/color_ffffff"
+            app:topbarTitleText="我的派件" />
+
+        <LinearLayout
+            android:id="@+id/ll_frag_search"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="top"
+            android:background="@color/topbar_background"
+            android:visibility="gone"
+             >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="top"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:background="@color/color_ffffff" >
+
+                <EditText
+                    android:id="@+id/edt_search"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_ffffff"
+                    android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+                    android:hint="输入客户手机号或单号"
+                    android:inputType="number|text"
+                    android:maxLength="20"
+                    android:padding="5dip"
+                    android:singleLine="true"
+                    android:textColor="@color/hui_43"
+                    android:textColorHint="@color/hui_c4"
+                    android:textSize="@dimen/size_28" >
+                    <requestFocus />
+                    </EditText>
+                <ImageView
+                    android:id="@+id/iv_search_saomiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dip"
+                    android:scaleType="center"
+                    android:src="@drawable/btn_saomiao"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="取消"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/size_28" />
+        </LinearLayout>
+    </FrameLayout>
+    
+      <com.common.base.FragmentTabHost
+        android:id="@android:id/tabhost"
+        style="@style/MW"
+        android:background="@android:color/white" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0"  />
+    </com.common.base.FragmentTabHost>
+	
+    <FrameLayout
+        android:id="@+id/fl_send_realcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+    
+    
+    
+    
+
+  <!--   <RadioGroup
+        android:id="@+id/rg_send"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_send_success"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_bg_sel"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已妥投"
+            android:textColor="@color/rb_text_sel"
+            android:textSize="@dimen/size_32" />
+
+        <RadioButton
+            android:id="@+id/rb_send_failed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_bg_sel"
+            android:button="@null"
+            android:gravity="center"
+            android:text="未妥投"
+            android:textColor="@color/rb_text_sel"
+            android:textSize="@dimen/size_32" />
+    </RadioGroup>
+
+     <include
+            android:id="@+id/nodata"
+            layout="@layout/include_nodata"
+            android:visibility="gone"/> -->
+   <!--  <cn.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_send"
+        style="@style/MW.UItra_pullToRefresh"
+        android:layout_height="match_parent" >
+
+        <FrameLayout style="@style/MM" >
+
+            <cn.socks.autoload.AutoLoadListView
+                android:id="@+id/allv_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/transparent" 
+                android:dividerHeight="8dip"
+                />
+        </FrameLayout>
+    </cn.srain.cube.views.ptr.PtrClassicFrameLayout> -->
+
+</LinearLayout>

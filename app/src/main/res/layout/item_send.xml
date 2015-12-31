@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MW"
+    android:background="@color/color_ffffff"
+    android:padding="15dip" >
+
+    <ImageView
+        android:id="@+id/iv_send_icon"
+        style="@style/WW"
+        android:scaleType="center"
+        android:src="@drawable/icon_wodepaisong" />
+
+    <TextView
+        android:id="@+id/tv_send_carriername"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/iv_send_icon"
+        android:singleLine="true"
+        android:text="顺丰快递"
+        android:textColor="@color/color_25"
+        android:textSize="@dimen/size_28" />
+
+    <TextView
+        android:id="@+id/tv_send_expresscode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_send_carriername"
+        android:singleLine="true"
+        android:text="683774983958758"
+        android:textColor="@color/color_25"
+        android:textSize="@dimen/size_28" />
+
+    <TextView
+        android:id="@+id/tv_send_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"
+        android:text="10:30"
+        android:textColor="@color/color_ff6f46"
+        android:textSize="@dimen/size_24" />
+
+    <TextView
+        android:id="@+id/tv_send_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_send_carriername"
+        android:layout_below="@id/tv_send_carriername"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="13dip"
+        android:text="猫哭"
+        android:textColor="@color/color_868585"
+        android:textSize="@dimen/size_28" />
+
+    <TextView
+        android:id="@+id/tv_send_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_send_carriername"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="13dip"
+        android:layout_toRightOf="@id/tv_send_name"
+        android:text="18500608270"
+        android:textColor="@color/color_868585"
+        android:textSize="@dimen/size_28" />
+
+    <LinearLayout
+        style="@style/MW"
+        android:layout_alignLeft="@id/tv_send_carriername"
+        android:layout_below="@id/tv_send_name"
+        android:layout_alignRight="@id/tv_send_time"
+        android:layout_marginTop="13dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_send_addr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color_868585"
+            android:textSize="@dimen/size_28" />
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_send_part2"
+        style="@style/WW"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_send_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/btn_jiantou" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_send_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_send_phone"
+        android:layout_toLeftOf="@+id/ll_send_part2"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@drawable/btn_dadianhua" />
+
+</RelativeLayout>

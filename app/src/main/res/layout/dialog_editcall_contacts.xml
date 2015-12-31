@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_forgetpwd_shape"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="顺丰    2234567818765"
+        android:textColor="@color/color_00c987"
+        android:textSize="@dimen/size_30" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/hui_99" />
+
+    <EditText
+        android:id="@+id/edt_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="请输入客户电话"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="10dp"
+        android:textColor="@color/hui_83"
+        android:textSize="@dimen/size_26" 
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_editCall_contacts"
+        style="@style/MW"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:id="@+id/tv_dialog_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dip"
+            android:gravity="center_horizontal"
+            android:text="是否确认将改单置为异常件？"
+            android:textColor="@color/hei"
+            android:textSize="@dimen/size_28" />
+
+        <LinearLayout
+            android:id="@+id/ll_dialog_unfinishedReasen"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input_search"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@+id/tv_dialog_unfinishedReasen"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="请选择原因"
+                android:textColor="@color/color_33"
+                android:textColorHint="@color/color_99"
+                android:textSize="@dimen/size_28" />
+
+            <ImageView
+                android:id="@+id/iv_dialog_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/btn_jiantou_xia" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/hui_99" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip" >
+
+        <Button
+            android:id="@+id/btn_dialog_cancel"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/size_26" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="@color/hui_99" />
+
+        <Button
+            android:id="@+id/btn_dialog_ok"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="保存并拨打"
+            android:textColor="@color/color_ff5a00"
+            android:textSize="@dimen/size_26" />
+    </LinearLayout>
+
+</LinearLayout>

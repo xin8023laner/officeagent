@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MW"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical" >
+    <!-- 下单时间和订单状态 -->	
+    <RelativeLayout 
+        android:id="@+id/rl_topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+        <TextView 
+            android:id="@+id/tv_orderCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:text="订单编号:ndsknsd"
+			android:layout_centerVertical="true"
+			android:textColor="@color/hui_b4"
+			android:textSize="@dimen/size_24"
+            />
+       	<TextView 
+       	    android:id="@+id/tv_serviceStatus"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:text="已派件"
+       	    android:textSize="@dimen/size_26"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:textColor="@color/zi_a0"
+       	    />
+    </RelativeLayout>
+    <!-- 商品详情 -->
+   	<LinearLayout
+   	    android:id="@+id/ll_contentLayout"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:gravity="center_vertical"
+   	    android:orientation="horizontal"
+   	    android:paddingBottom="8dp"
+   	    android:paddingLeft="15dp"
+   	    android:paddingRight="15dp"
+   	    android:paddingTop="8dp" >
+
+   	    <ImageView
+   	        android:id="@+id/tv_goodsPhoto"
+   	        android:layout_width="45dp"
+   	        android:layout_height="45dp"
+   	        android:layout_marginRight="8dp"
+   	        android:src="@mipmap/uitra_rotate_arrow" 
+   	        android:visibility="gone"/>
+
+   	    <TextView
+   	       	android:id="@+id/goodsName"
+   	        android:layout_width="0dp"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginRight="10dp"
+   	        android:layout_weight="1"
+   	        android:lineSpacingExtra="6dp"
+   	        android:text="旺旺食品 旺仔QQ糖 香橙味70g 糖果软香橙味QQ糖"
+   	        android:textColor="@color/hei_43"
+   	        android:textSize="@dimen/size_20" />
+
+   	  
+   	</LinearLayout>
+   	<!-- 购买的数量和价格 -->
+	<LinearLayout 
+	    android:id="@+id/ll_bottomNumPriceLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="33dp"
+	    android:orientation="horizontal"
+	    android:paddingTop="5dp"
+	    android:paddingBottom="5dp"
+	    android:gravity="center_vertical"
+	    android:paddingRight="15dp"
+	    >
+   	    <!-- 共几件 -->
+	    <TextView 
+	        android:id="@+id/tv_goodsCount"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="共3件"
+	        android:layout_weight="1"
+	        android:gravity="right"
+			android:textColor="@color/hui_b4"
+			android:layout_marginRight="20dp"
+			android:textSize="@dimen/size_24"
+	        />
+	
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="实付："
+	        android:gravity="right"
+			android:textColor="@color/hui_b4"
+			android:textSize="@dimen/size_24"
+	        />
+	    	    
+	    <TextView 
+	        android:id="@+id/tv_realPrcie"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:text="182.5元"
+			android:textSize="@dimen/size_26" 
+	        />
+	    
+	</LinearLayout>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/hui_ee"/>
+</LinearLayout>

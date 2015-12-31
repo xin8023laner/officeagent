@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MW"
+    android:background="@color/color_ffffff" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dip"
+        android:background="@color/color_9e" />
+
+    <ImageView
+        android:id="@+id/iv_receivepickup_icon"
+        style="@style/WW"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="13dip"
+        android:scaleType="center"
+        android:src="@drawable/icon_lvseren" />
+
+    <TextView
+        android:id="@+id/tv_receivepickup_name"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/iv_receivepickup_icon"
+        android:singleLine="true"
+        android:text="猫哭哈哈哈"
+        android:textColor="@color/color_25"
+        android:textSize="@dimen/size_28" />
+
+    <TextView
+        android:id="@+id/tv_receivepickup_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/tv_receivepickup_name"
+        android:singleLine="true"
+        android:text="18500608270"
+        android:textColor="@color/color_45bceb"
+        android:textSize="@dimen/size_28" />
+
+    <TextView
+        android:id="@+id/tv_receivepickup_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_receivepickup_icon"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="13dip"
+        android:text="北京海淀海兴大厦B座一层西塔网络1002号567室"
+        android:textColor="@color/color_9e"
+        android:textSize="@dimen/size_28" />
+
+    <View
+        android:id="@+id/v_receivepickup_line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dip"
+        android:layout_below="@id/tv_receivepickup_addr"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="12dip"
+        android:background="@color/color_9e" />
+
+    <TextView
+        android:id="@+id/tv_receivepickup_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_receivepickup_line1"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="12dip"
+        android:singleLine="true"
+        android:text="期望取件时间：05-04 9：00-18：00"
+        android:textColor="@color/color_25"
+        android:textSize="@dimen/size_28" />
+
+    <View
+        android:id="@+id/v_receivepickup_line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dip"
+        android:layout_below="@id/tv_receivepickup_time"
+        android:layout_marginTop="12dip"
+        android:background="@color/color_9e" />
+
+    <LinearLayout
+        android:id="@+id/ll_receivepickup_bottomButton"
+        style="@style/MW"
+        android:layout_below="@id/v_receivepickup_line2"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_receivepickup_back"
+            android:layout_width="0dp"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/WW"
+                android:scaleType="center"
+                android:src="@drawable/icon_jierenwu" />
+
+            <TextView
+                style="@style/WW"
+                android:layout_marginLeft="12dip"
+                android:text="退回"
+                android:textColor="@color/color_45bceb"
+                android:textSize="@dimen/size_28" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dip"
+            android:background="@color/divider_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_receivepickup_submit"
+            android:layout_width="0dp"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                style="@style/WW"
+                android:scaleType="center"
+                android:src="@drawable/icon_jierenwu" />
+
+            <TextView
+                style="@style/WW"
+                android:layout_marginLeft="12dip"
+                android:text="接受任务"
+                android:textColor="@color/color_45bceb"
+                android:textSize="@dimen/size_28" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dip"
+        android:layout_below="@id/ll_receivepickup_bottomButton"
+        android:background="@color/color_9e" />
+
+</RelativeLayout>

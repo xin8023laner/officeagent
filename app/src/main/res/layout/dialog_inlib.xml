@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_forgetpwd_shape"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dialog_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dip"
+        android:text="快件未入库"
+        android:textColor="@color/color_c4"
+        android:textSize="@dimen/size_30" />
+
+     <FrameLayout
+         android:id="@+id/fl_dialog_inlib_chooseExpressCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            
+            android:background="@drawable/input_search"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+             >
+
+            <TextView
+                android:id="@+id/tv_dialog_carrier"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="请选择快递公司"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/hui_43"
+                android:textSize="@dimen/size_28" />
+
+            <ImageView
+                android:id="@+id/iv_dialog_enter"
+                android:layout_width="40dip"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_jiantou"
+                android:scaleType="center"
+                 />
+        </LinearLayout>
+    </FrameLayout>
+ <EditText
+        android:id="@+id/tv_dialog_rukutelephone_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="11"
+        android:hint="请输入客户电话号码"
+        android:inputType="phone"
+        android:maxLength="20"
+        android:paddingLeft="10dp"
+        android:textColor="@color/hei_25"
+        android:textColorHint="@color/hui_99"
+        android:textSize="@dimen/size_32"
+        android:visibility="gone" >
+
+        <requestFocus />
+    </EditText>
+    
+
+    <Button
+        android:id="@+id/btn_dialog_inlib"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_search"
+        android:gravity="center"
+        android:text="入库"
+        android:textColor="@color/bai_ff"
+        android:textSize="@dimen/size_26" />
+
+</LinearLayout>

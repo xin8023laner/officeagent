@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_aboutLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="20dp"
+            />
+
+        <!-- <LinearLayout
+            android:id="@+id/ll_aboutVersCodeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_aboutLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_aboutVersCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="V2.0.0"
+                android:textColor="@color/main_subtext_color"
+                android:textSize="@dimen/c_size" />
+            
+            
+        </LinearLayout> -->
+        
+        <TextView
+            android:id="@+id/tv_aboutAutolink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_aboutLogo"
+            android:layout_centerHorizontal="true"
+            android:autoLink="all"
+            android:lineSpacingMultiplier="1.4"
+            android:text="http://www.gtexpress.cn"
+            android:textSize="@dimen/size_28" 
+            android:textColorLink="#40aa9c"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_aboutDescLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_aboutAutolink"
+            android:layout_marginTop="35dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.3"
+                android:text="      贯通云网（北京）信息技术有限公司----新锐互联网公司，中国最具效率和创新精神的快递行业入口门户企业与解决方案提供商。我们基于云计算和大数据技术来整合快递物流行业营运资源，为用户提供收发、查询和管理快递包裹的最佳体验,期望所有人都能愉悦的享受快递物流服务！"
+                android:textSize="@dimen/size_28" 
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                />
+
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.3"
+                android:text="帮您简化繁琐的工作流程"
+                android:textColor="@color/main_subtext_color"
+                android:textSize="@dimen/c_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.3"
+                android:text="及时处理用户请求"
+                android:textColor="@color/main_subtext_color"
+                android:textSize="@dimen/c_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.3"
+                android:text="帮您节约投资成本"
+                android:textColor="@color/main_subtext_color"
+                android:textSize="@dimen/c_size" /> -->
+        </LinearLayout>
+
+        <!-- <TextView
+            android:id="@+id/tv_aboutGzwm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_aboutDescLayout"
+            android:layout_centerHorizontal="true"
+            android:text="关注我们" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_aboutGzwm"
+            android:layout_toLeftOf="@id/tv_aboutGzwm"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ib_aboutSina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="新浪微博" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_aboutShareLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_aboutGzwm"
+            android:layout_toRightOf="@id/tv_aboutGzwm"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ib_aboutTencent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="腾讯微博" />
+        </LinearLayout>
+ -->
+        <TextView 
+            android:id="@+id/tv_aboutCallto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击拨打客服电话"
+            android:textSize="12sp"
+            android:layout_below="@id/ll_aboutDescLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:textColor="#c3c2c2"
+            />
+        
+        <LinearLayout 
+            android:id="@+id/ll_aboutCalltoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_aboutCallto"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="400-1180-700"
+                android:textColor="#909090"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京.海淀区.丹棱街16号海兴大厦1层"
+            android:layout_below="@id/ll_aboutCalltoLayout"
+            android:layout_centerHorizontal="true"
+            android:textColor="#40aa9c"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="贯通版权所有"
+                android:textSize="@dimen/size_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5.0dip"
+                android:text="Copyright © 2013-2016 gtexpress.All Rights Reserved"
+                android:textSize="@dimen/size_24" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

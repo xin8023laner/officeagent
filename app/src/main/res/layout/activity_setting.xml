@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    android:id="@+id/ll_setting_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hui_f0"
+    android:orientation="vertical" >
+
+    <com.common.ui.Topbar
+        android:id="@+id/topbar_tepwd"
+        style="@style/MW.Topbar"
+        app:topbarBackBg="@drawable/btn_fanhui_topbar"
+        app:topbarBackMode="finish"
+        app:topbarTitleText="设置" >
+    </com.common.ui.Topbar>
+
+    <LinearLayout
+        style="@style/MW"
+        android:layout_marginTop="10dp"
+        android:background="@color/bai_ff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_checkupdate_setting"
+            android:layout_width="match_parent"
+            android:layout_height="43dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_icon_checkupdate"
+                style="@style/WM"
+                android:layout_marginLeft="16dp"
+                android:gravity="center" >
+
+                <ImageView
+                    style="@style/WM"
+                    android:layout_width="20dip"
+                    android:scaleType="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_gengxin" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_checkupdate_text"
+                style="@style/MM"
+                android:layout_toRightOf="@id/rl_icon_checkupdate" >
+
+                <TextView
+                    style="@style/WW"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:text="@string/checkupdate"
+                    android:textColor="@color/hei_34"
+                    android:textSize="@dimen/size_28" />
+
+                <TextView
+                    android:id="@+id/tv_setting_version"
+                    style="@style/WW"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/iv_jiantou"
+                    android:text="@string/isnewversion"
+                    android:textColor="@color/hui_99"
+                    android:textSize="@dimen/size_28" />
+
+                <ImageView
+                    android:id="@+id/iv_jiantou"
+                    style="@style/WW"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/btn_jiantou" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            layout="@layout/include_line_horizontal_march" />
+
+        <RelativeLayout
+            android:id="@+id/rl_updatepwd_setting"
+            android:layout_width="match_parent"
+            android:layout_height="43dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_icon_updatepwd"
+                style="@style/WM"
+                android:layout_marginLeft="16dp"
+                android:gravity="center" >
+
+                <ImageView
+                    style="@style/WM"
+                     android:layout_width="20dip"
+                    android:scaleType="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_wangjimima" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_updatepwd_text"
+                style="@style/MM"
+                android:layout_toRightOf="@id/rl_icon_updatepwd" >
+
+                <TextView
+                    style="@style/WW"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:text="@string/notremember"
+                    android:textColor="@color/hei_34"
+                    android:textSize="@dimen/size_28" />
+
+                <TextView
+                    style="@style/WW"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/iv_jiantou1"
+                    android:text="@string/updatepwd"
+                    android:textColor="@color/hui_99"
+                    android:textSize="@dimen/size_28" />
+
+                <ImageView
+                    android:id="@+id/iv_jiantou1"
+                    style="@style/WW"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/btn_jiantou" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            layout="@layout/include_line_horizontal_march" />
+
+        <RelativeLayout
+            android:id="@+id/rl_useapp_setting"
+            android:layout_width="match_parent"
+            android:layout_height="43dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_icon_useapp"
+                style="@style/WM"
+                android:layout_marginLeft="16dp"
+                android:gravity="center" >
+
+                <ImageView
+                    style="@style/WM"
+                     android:layout_width="20dip"
+                    android:scaleType="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_jieshao" />
+            </RelativeLayout>
+				<RelativeLayout
+                android:id="@+id/rl_useapp_text"
+                style="@style/MM"
+                android:layout_toRightOf="@id/rl_icon_useapp" >
+
+                <TextView
+                    style="@style/WW"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:text="@string/howtouse"
+                    android:textColor="@color/hei_34"
+                    android:textSize="@dimen/size_28" />
+
+                <TextView
+                    style="@style/WW"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/iv_jiantou2"
+                    android:text="@string/lookintroduce"
+                    android:textColor="@color/hui_99"
+                    android:textSize="@dimen/size_28" />
+
+                <ImageView
+                    android:id="@+id/iv_jiantou2"
+                    style="@style/WW"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/btn_jiantou" />
+            </RelativeLayout>
+                    </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            layout="@layout/include_line_horizontal_march" />
+
+        <RelativeLayout
+            android:id="@+id/rl_suggestion_setting"
+            android:layout_width="match_parent"
+            android:layout_height="43dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_icon_suggestion"
+                style="@style/WM"
+                android:layout_marginLeft="16dp"
+                android:gravity="center" >
+
+                <ImageView
+                    style="@style/WM"
+                     android:layout_width="20dip"
+                    android:scaleType="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_yijianfankui" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_suggestion_text"
+                style="@style/MM"
+                android:layout_toRightOf="@id/rl_icon_suggestion" >
+
+                <TextView
+                    style="@style/WW"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:text="@string/suggestion"
+                    android:textColor="@color/hei_34"
+                    android:textSize="@dimen/size_28" />
+
+                <TextView
+                    style="@style/WW"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/iv_jiantou3"
+                    android:text="@string/cometotalk"
+                    android:textColor="@color/hui_99"
+                    android:textSize="@dimen/size_28" />
+
+                <ImageView
+                    android:id="@+id/iv_jiantou3"
+                    style="@style/WW"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/btn_jiantou" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            layout="@layout/include_line_horizontal_march" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_exitLogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_exitlogin_selector"
+        android:text="@string/exitlogin"
+        android:textColor="@color/bai_ff"
+        android:textSize="@dimen/size_32" />
+
+</LinearLayout>

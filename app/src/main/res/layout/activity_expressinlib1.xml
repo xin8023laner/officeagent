@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    style="@style/MM"
+    android:background="@color/color_f8"
+    android:orientation="vertical" >
+
+    <com.common.ui.Topbar
+        style="@style/MW.Topbar"
+        app:topbarBackBg="@drawable/btn_fanhui_topbar"
+        app:topbarBackMode="finish"
+        app:topbarTitleText="快件入库" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="*该功能与扫描枪功能相同，推荐使用扫描枪入库"
+        android:textColor="@color/color_ff6f46"
+        android:textSize="@dimen/size_22" />
+
+    <TextView
+        android:id="@+id/tv_expressinlib_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:singleLine="true"
+        android:text="常用"
+        android:textColor="@color/hei"
+        android:textSize="@dimen/size_28" />
+
+    <GridView
+        android:id="@+id/gv_expressinlib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:gravity="center"
+        android:horizontalSpacing="10dip"
+        android:numColumns="5"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:verticalSpacing="15dip" 
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/color_ffffff"
+        android:padding="10dip" >
+
+        <TextView 
+            android:id="@+id/tv_expressinlib_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="@dimen/size_28"
+            android:text="点击进行快递公司选择"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_expressinlib_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_exitlogin_selector"
+        android:text="下一步"
+        android:textColor="@color/bai_ff"
+        android:textSize="@dimen/size_32" />
+
+</LinearLayout>

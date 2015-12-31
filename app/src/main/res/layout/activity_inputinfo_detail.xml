@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.gt.officeagent"
+    style="@style/MM"
+    android:background="@color/color_f8"
+    android:orientation="vertical" >
+
+    <com.common.ui.Topbar
+        style="@style/MW.Topbar"
+        app:topbarBackBg="@drawable/btn_fanhui_topbar"
+        app:topbarBackMode="finish"
+        app:topbarTitleText="录入信息" />
+
+    <ScrollView style="@style/MM" >
+
+        <LinearLayout
+            style="@style/MW"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/WW"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="15dip"
+                android:singleLine="true"
+                android:text="订单信息"
+                android:textColor="@color/color_25"
+                android:textSize="@dimen/size_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="8dip"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:text="订单编号"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/size_28" />
+
+                <TextView
+                    android:id="@+id/tv_inputinfodetail_waybillcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dip"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:text="4443646457"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/size_28" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="15dip"
+                android:background="@color/color_f8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:text="快递公司"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/size_28" />
+
+                <TextView
+                    android:id="@+id/tv_inputinfodetail_carriername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dip"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:text="顺丰快递"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/size_28" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="15dip"
+                android:background="@color/color_f8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:text="快递单号"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/size_28" />
+
+                <TextView
+                    android:id="@+id/tv_inputinfodetail_expresscode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dip"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:text="23254363366"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/size_28" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_inputinfodetail_infolable"
+                style="@style/WW"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="15dip"
+                android:singleLine="true"
+                android:text="客户信息"
+                android:textColor="@color/color_25"
+                android:textSize="@dimen/size_24" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:background="@color/color_ffffff"
+                android:padding="10dip">
+
+                <TextView
+                    android:id="@+id/tv_inputinfodetail_namelable"
+                    android:layout_width="94dip"
+                    android:layout_height="40dip"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:text="联系方式："
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/size_28" />
+
+                <EditText
+                    android:id="@+id/edt_inputinfodetail_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/tv_inputinfodetail_namelable"
+                    android:background="@drawable/bg_edittext"
+                    android:padding="5dip"
+                    android:singleLine="true"
+                    android:text="请输入客户联系方式"
+                    android:textColor="@color/color_33"
+                    android:textColorHint="@color/color_99"
+                    android:textSize="@dimen/size_28" 
+                    android:inputType="phone"/>
+
+                <TextView
+                    android:id="@+id/tv_inputinfodetail_phonelable"
+                    android:layout_width="94dip"
+                    android:layout_height="40dip"
+                    android:layout_below="@id/tv_inputinfodetail_namelable"
+                    android:layout_marginTop="20dip"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:text="收件人："
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/size_28" />
+
+                <EditText
+                    android:id="@+id/edt_inputinfodetail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_below="@id/tv_inputinfodetail_namelable"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="20dip"
+                    android:layout_toRightOf="@id/tv_inputinfodetail_phonelable"
+                    android:background="@drawable/bg_edittext"
+                    android:padding="5dip"
+                    android:singleLine="true"
+                    android:text="请输入客户姓名"
+                    android:textColor="@color/color_33"
+                    android:textColorHint="@color/color_99"
+                    android:textSize="@dimen/size_28" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_inputinfodetail_addrlabel"
+                    android:layout_width="94dip"
+                    android:layout_height="40dip"
+                    android:layout_below="@id/tv_inputinfodetail_phonelable"
+                    android:layout_marginTop="20dip"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:text="客戶地址："
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/size_28" />
+
+                <EditText
+                    android:id="@+id/edt_inputinfodetail_addr"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_below="@id/tv_inputinfodetail_phonelable"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="20dip"
+                    android:layout_toRightOf="@id/tv_inputinfodetail_addrlabel"
+                    android:background="@drawable/bg_edittext"
+                    android:padding="5dip"
+                    android:singleLine="true"
+                    android:text="请输入客户地址"
+                    android:textColor="@color/color_33"
+                    android:textColorHint="@color/color_99"
+                    android:textSize="@dimen/size_28" />
+
+                <TextView
+                    android:id="@+id/tv_inputinfodetail_type"
+                    android:layout_width="94dip"
+                    android:layout_height="40dip"
+                    android:layout_below="@id/tv_inputinfodetail_addrlabel"
+                    android:layout_marginTop="20dip"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:text="交付方式："
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/size_28" />
+
+                <RadioGroup
+                    android:id="@+id/rg_inputinfodetail_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_below="@id/tv_inputinfodetail_addrlabel"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="20dip"
+                    android:layout_toRightOf="@id/tv_inputinfodetail_type"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_inputinfodetail_kehuziyi"
+                        android:layout_weight="1"
+                        android:button="@drawable/rb_black_selector"
+                        android:paddingLeft="15dip"
+                        android:text="自提"
+                        android:textColor="@color/color_33"
+                        android:textColorHint="@color/color_99"
+                        android:textSize="@dimen/size_28" />
+
+                    <RadioButton
+                        android:id="@+id/rb_inputinfodetail_shangmenpaisong"
+                        android:layout_marginLeft="15dip"
+                        android:layout_weight="1"
+                        android:button="@drawable/rb_black_selector"
+                        android:paddingLeft="15dip"
+                        android:text="派送"
+                        android:textColor="@color/color_33"
+                        android:textColorHint="@color/color_99"
+                        android:textSize="@dimen/size_28" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/MM"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="28dip" >
+
+                <Button
+                    android:id="@+id/btn_inputinfodetail_submit"
+                    android:layout_width="0dip"
+                    android:layout_height="41dip"
+                    android:layout_weight="1"
+                    android:background="@color/color_ff6f46"
+                    android:text="完成"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/size_32" />
+
+                <Button
+                    android:id="@+id/btn_inputinfodetail_reset"
+                    android:layout_width="0dip"
+                    android:layout_height="41dip"
+                    android:layout_marginLeft="14dip"
+                    android:layout_weight="1"
+                    android:background="@color/color_00c887"
+                    android:text="重填"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/size_32" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

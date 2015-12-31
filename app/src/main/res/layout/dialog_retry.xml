@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/dialog_forgetpwd_shape"
+    android:orientation="vertical" >
+    <ImageView 
+        style="@style/WW"
+        android:src="@drawable/btn_chongshi"
+        android:layout_margin="10dp"
+        />
+	<TextView
+            android:id="@+id/tv_dialogretry_msg"
+            style="@style/WW"
+            android:gravity="center_horizontal"
+            android:text="下载失败，请重试"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/color_c4"
+            android:textSize="@dimen/size_26" />
+		
+        <Button 
+            android:id="@+id/btn_dialogretry_data"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_margin="20dp"
+            android:background="@color/color_00c887"
+            android:text="重试"
+            android:textColor="@color/bai_ff"
+            android:textSize="@dimen/size_34"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            />
+</LinearLayout>

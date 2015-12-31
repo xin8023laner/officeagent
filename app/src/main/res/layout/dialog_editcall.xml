@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_forgetpwd_shape"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/forgetpwd"
+        android:textColor="@color/color_00c987"
+        android:textSize="@dimen/size_30" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hui_99" />
+
+    <EditText
+        android:id="@+id/edt_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="请输入客户联系方式"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="10dp"
+        android:textColor="@color/hui_83"
+        android:textSize="@dimen/size_26" />
+<TextView
+	    android:id="@+id/tv_dialog_sendexpress"
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp"
+	    android:layout_gravity="left"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_marginTop="10dp"
+	    android:text="顺丰快递        345485454474"
+	    android:textColor="@color/color_868585"
+	    android:textSize="@dimen/size_26"
+	    android:visibility="gone" />
+    <Button
+        android:id="@+id/btn_dialog_call"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_search"
+        android:gravity="center"
+        android:text="拨打"
+        android:textColor="@color/bai_ff"
+        android:textSize="@dimen/size_26" />
+
+</LinearLayout>

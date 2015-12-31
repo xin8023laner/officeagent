@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MW"
+    android:background="@color/bai_ff" 
+    android:orientation="vertical">
+<LinearLayout 
+    style="@style/MW"
+    android:background="@color/bai_ff" 
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/tv_scanadapter_carriername"
+        style="@style/WW"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="汇通快递"
+        android:textColor="@color/color_25"
+        android:textSize="@dimen/size_28" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_scanadapter_expresscode"
+        style="@style/WW"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:text="313454664865"
+        android:textColor="@color/color_25"
+        android:textSize="@dimen/size_28" />
+    <TextView
+        android:id="@+id/tv_scanadapter_phone"
+        style="@style/WW"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="313454664865"
+        android:textColor="@color/color_25"
+        android:textSize="@dimen/size_28" 
+        android:visibility="gone"/>
+	<TextView
+            android:id="@+id/tv_scanadapter_bulu"
+            style="@style/WW"
+            android:padding="10dp"
+            android:layout_weight="5"
+            android:gravity="right"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:text="补录"
+            android:textColor="@color/lan_e2"
+            android:textSize="@dimen/size_28"
+            android:visibility="gone" />
+    <TextView
+        android:id="@+id/tv_scanadapter_del"
+        style="@style/WW"
+        android:text="移除"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/color_ff6f46"
+        android:textSize="@dimen/size_28" />
+</LinearLayout>
+<TextView
+        android:id="@+id/tv_scanadapter_phone2"
+        style="@style/WW"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:text="313454664865"
+       android:textColor="@color/lan_e2"
+        android:textSize="@dimen/size_28" 
+        android:visibility="gone"/>
+</LinearLayout>

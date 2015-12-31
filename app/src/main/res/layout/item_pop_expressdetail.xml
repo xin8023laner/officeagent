@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bai_ff"
+    >
+
+    <TextView
+        android:id="@+id/tv_pop_expressdetail_item"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/color_f0"
+        android:paddingLeft="15dip"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:textColor="@color/color_25"
+        android:textSize="@dimen/size_28"
+        android:text="测试测试测试"
+         />
+
+    
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bai_ff"
+    >
+
+    <TextView
+        android:id="@+id/tv_pop_paisong_item"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/bai_ff"
+        android:padding="10dip"
+        android:gravity="center"
+        android:textColor="@color/hui_3800"
+        android:textSize="@dimen/size_28"
+        android:text="测试测试测试"
+         />
+
+    
+
+</LinearLayout>
